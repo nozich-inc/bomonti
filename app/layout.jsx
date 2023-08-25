@@ -33,9 +33,7 @@ async function RootLayout({ children }) {
 
           <Toaster />
 
-          <div className="flex flex-col overflow-scroll min-w-0 w-full">
-            {children}
-          </div>
+          {children}
         </Providers>
       </body>
     </html>
