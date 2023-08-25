@@ -20,10 +20,10 @@ export default function Home() {
 
             <div className="image">
               <Image
-                src={'/demo-1.png'}
+                src={demo.image}
                 width={180}
                 height={380}
-                alt="Demo-1"
+                alt={demo.title}
               />
             </div>
           </Link>
