@@ -1,0 +1,27 @@
+#docker run -i -t -d --name=panel node:16-slim node index.js
+
+version: '3.9'
+
+services:
+  panel:
+    image: nozich/nozich:latest
+    user: nozich:nozich
+    container_name: panel-${ENV}
+    hostname: panel-${ENV}
+    network_mode: bridge
+    ports:
+      - ${PORT}:${PORT}
+      - ${PORT_WS}:${PORT_WS}
+    restart: always
+    env_file:
+      - .env
+    environment:
+      - TZ=Europe/Istanbul
+      - LANGUAGE=tr_TR.tr
+      - PG_HOST=172.17.0.1
+    volumes:
+      - ~/.ssh:/home/nozich/.ssh:ro
+      - ./:/home/nozich/app
+    working_dir: /home/nozich/app
+    # command: 'pnpm install --prod --frozen-lockfile --recursive && pnpm start ./ panel-${ENV}'
+    command: 'pnpm start'

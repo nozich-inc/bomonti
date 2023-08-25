@@ -1,0 +1,26 @@
+name: prod
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: [self-hosted]
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Get environment file
+        run: cp /home/nozich/ci/bomonti/prod.env ./.env
+
+      - name: Build on docker
+        run: docker-compose run --rm bomonti ignore-errors.js "pnpm" "prebuild"
+
+      - name: Prepare actions
+        run: cd .action && npm install
+
+      - uses: ./.action
