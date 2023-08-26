@@ -18,7 +18,7 @@ jobs:
         run: cp /home/nozich/ci/bomonti/prod.env ./.env
 
       - name: Build on docker
-        run: docker-compose run --rm bomonti ignore-errors.js "pnpm" "prebuild"
+        run: docker-compose run --rm bomonti ignore-errors.js "pnpm" "pre:build"
 
       - name: Prepare actions
         run: cd .action && npm install
