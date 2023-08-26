@@ -15,7 +15,7 @@ jobs:
           node-version: 18
 
       - name: Get environment file
-        run: cp /home/nozich/ci/bomonti-website/test.env ./.env
+        run: cp /home/nozich/ci/bomonti/test.env ./.env
 
       - name: Build on docker
         run: docker-compose run --rm bomonti ignore-errors.js "pnpm" "pre:build"
