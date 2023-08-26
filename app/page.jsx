@@ -11,20 +11,23 @@ const demos = [
 
 export default function Home() {
   return (
-    <MainFrame className="grid grid-cols-2 grid-rows-2 gap-2 overflow-scroll min-w-0 py-5 px-3 mx-auto w-full">
+    <MainFrame
+      className="grid grid-cols-2 grid-rows-2 gap-2 overflow-scroll py-5 px-3 mx-auto w-full max-w-screen-md"
+      style={{ minWidth: '370px' }}
+    >
       <Choose />
 
       {demos.map((demo) => (
         <div
           key={demo.id}
-          className="demo border overflow-hidden w-full h-full bg-white dark:bg-black rounded-lg"
+          className="demo p-0.5 pb-14 overflow-hidden w-full h-full bg-white dark:bg-black rounded-lg border-blue-500 hover:border-blue-700 border-2 dark:border-gray-500 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
         >
           <Link href={demo.link}>
             <div className="title m-3 text-rose-900 font-semibold">
               {demo.title}
             </div>
 
-            <div className="image">
+            <div className="image overflow-hidden max-h-full rounded-md">
               <Image
                 className="w-full"
                 src={demo.image}

@@ -8,7 +8,7 @@ export default function Choose() {
   return (
     <div
       className={classNames(
-        'demo border overflow-hidden w-full h-full flex flex-wrap flex-col items-center justify-center text-center bg-white/50 rounded-lg'
+        'demo cursor-default p-2 border-2 overflow-hidden w-full h-full flex flex-wrap flex-col items-center justify-center text-center bg-white/80 rounded-lg'
       )}
     >
       <span
@@ -26,9 +26,9 @@ export default function Choose() {
           Bomonti Sydney
         </span>
 
-        <span className="text-sm">44 Market St., NSW 2000</span>
+        <span className="text-xs">44 Market St., NSW 2000</span>
 
-        <span className="text-sm">+61 491 663 609</span>
+        <span className="text-xs">+61 491 663 609</span>
       </div>
     </div>
   );
