@@ -8,7 +8,7 @@ export default function Choose() {
   return (
     <div
       className={classNames(
-        'demo cursor-default p-2 border-2 overflow-hidden w-full h-full flex flex-wrap flex-col items-center justify-center text-center bg-white/80 rounded-lg'
+        'demo cursor-default p-2 overflow-hidden w-full h-full flex flex-wrap flex-col items-center justify-center text-center bg-white rounded-lg'
       )}
     >
       <span
@@ -17,8 +17,22 @@ export default function Choose() {
           dancingScript.className
         )}
       >
-        Choose a Demo
-        <br />⇢
+        Welcome
+      </span>
+
+      <span
+        className={classNames(
+          'text-3xl mt-2 scroll-mb-6 text-rose-950/50',
+          dancingScript.className
+        )}
+      >
+        pick a demo
+      </span>
+
+      <span
+        className={classNames('text-5xl mt-2 mb-4 scroll-mb-10 text-rose-900')}
+      >
+        ⇢
       </span>
 
       <div className="flex flex-col">
@@ -26,9 +40,11 @@ export default function Choose() {
           Bomonti Sydney
         </span>
 
-        <span className="text-xs">44 Market St., NSW 2000</span>
+        <span className="text-xs text-lime-900/50">
+          44 Market St., NSW 2000
+        </span>
 
-        <span className="text-xs">+61 491 663 609</span>
+        <span className="text-xs text-lime-900/50">+61 491 663 609</span>
       </div>
     </div>
   );
