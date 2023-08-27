@@ -11,6 +11,7 @@ export default function Demo3Page() {
         width={1920}
         height={1200}
         alt="Welcome to Bomonti Cafe & Restaurant"
+        priority
       />
 
       <Image
