@@ -4,9 +4,9 @@ import Link from 'next/link';
 import Choose from './choose';
 
 const demos = [
-  { id: 1, title: 'DEMO-1', image: '/demo-1.jpg', link: '/demo-1' },
-  { id: 2, title: 'DEMO-2', image: '/demo-2.jpg', link: '/demo-2' },
-  { id: 3, title: 'DEMO-3', image: '/demo-3.jpg', link: '/demo-3' },
+  { id: 1, title: 'DEMO-1', image: '/demo-1-thumb.jpg', link: '/demo-1' },
+  { id: 2, title: 'DEMO-2', image: '/demo-1-thumb.jpg', link: '/demo-2' },
+  { id: 3, title: 'DEMO-3', image: '/demo-1-thumb.jpg', link: '/demo-3' },
 ];
 
 export default function Home() {
@@ -31,8 +31,8 @@ export default function Home() {
                 <Image
                   className="w-full"
                   src={demo.image}
-                  width={180}
-                  height={380}
+                  width={300}
+                  height={1315}
                   alt={demo.title}
                 />
               </div>

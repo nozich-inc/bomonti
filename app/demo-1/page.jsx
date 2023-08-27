@@ -8,16 +8,23 @@ export default function Demo1Page() {
 
       <Image
         src="/demo-1-1.jpg"
-        width={3600}
-        height={6000}
+        width={1920}
+        height={1200}
         alt="Welcome to Bomonti Cafe & Restaurant"
       />
 
       <Image
         src="/demo-1-2.jpg"
-        width={3600}
-        height={9160}
+        width={1920}
+        height={1200}
         alt="Bomonti Cafe & Restaurant"
+      />
+
+      <Image
+        src="/demo-1-3.jpg"
+        width={1920}
+        height={5018}
+        alt="Contact Bomonti Cafe & Restaurant"
       />
     </div>
   );
