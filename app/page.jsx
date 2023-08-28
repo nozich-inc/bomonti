@@ -27,12 +27,13 @@ export default function Home() {
               <div className="title mx-1 my-2 px-2 bg-lime-900/5 rounded-md text-lime-800 font-semibold">
                 {demo.title}
               </div>
+
               <div className="image overflow-hidden max-h-full rounded-md">
                 <Image
                   className="w-full"
                   src={demo.image}
                   width={300}
-                  height={1315}
+                  height={657.5}
                   alt={demo.title}
                 />
               </div>
