@@ -6,7 +6,7 @@ import Choose from './choose';
 const demos = [
   { id: 1, title: 'DEMO-1', image: '/demo-1/thumb.jpg', link: '/demo-1' },
   { id: 2, title: 'DEMO-2', image: '/demo-2/thumb.jpg', link: '/demo-2' },
-  { id: 3, title: 'DEMO-3', image: '/demo-1/thumb.jpg', link: '/demo-3' },
+  { id: 3, title: 'DEMO-3', image: '/demo-3/thumb.jpg', link: '/demo-3' },
 ];
 
 export default function Home() {
