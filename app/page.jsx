@@ -21,10 +21,10 @@ export default function Home() {
         {demos.map((demo) => (
           <div
             key={demo.id}
-            className="demo p-0.5 pb-14 overflow-hidden w-full h-full bg-white rounded-lg border border-rose-800 hover:border-2 hover:border-blue-500 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            className="demo p-0.5 pb-14 overflow-hidden w-full h-full bg-white rounded-lg border border-lime-500 hover:border-2 hover:border-blue-500 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
           >
             <Link href={demo.link}>
-              <div className="title m-3 text-rose-900 font-semibold">
+              <div className="title mx-1 my-2 px-2 bg-lime-900/5 rounded-md text-lime-800 font-semibold">
                 {demo.title}
               </div>
               <div className="image overflow-hidden max-h-full rounded-md">
