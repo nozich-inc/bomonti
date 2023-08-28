@@ -6,17 +6,15 @@ services:
   bomonti:
     image: nozich/nozich:latest
     user: nozich:nozich
+    env_file: .env
     container_name: bomonti-${ENV}
     hostname: bomonti-${ENV}
     network_mode: bridge
+    restart: always
     ports:
       - ${PORT}:${PORT}
+      - ${PORT_EXPRESS}:${PORT_EXPRESS}
       - ${PORT_WS}:${PORT_WS}
-    restart: always
-    env_file:
-      - .env
-    environment:
-      - PG_HOST=172.17.0.1
     volumes:
       - ~/.ssh:/home/nozich/.ssh:ro
       - ./:/home/nozich/app
