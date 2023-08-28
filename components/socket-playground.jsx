@@ -49,14 +49,14 @@ const SocketPlayground = ({ className, ...props }) => {
       <form
         onSubmit={handleSubmit}
         className={classNames(
-          'w-full flex mt-2 p-2 bg-slate-200 dark:bg-gray-800 border-t border-gray-300 dark:border-gray-700',
+          'w-full flex mt-2 p-2 bg-slate-200 border-t border-gray-300',
           className
         )}
         {...props}
       >
         <input
           type="text"
-          className="w-full mx-3 mb-1 bg-white dark:bg-slate-600 p-2 rounded-lg shadow-md"
+          className="w-full mx-3 mb-1 bg-white p-2 rounded-lg shadow-md"
           label="Name"
           placeholder="⚡ Copilot"
           value={message}
@@ -66,10 +66,7 @@ const SocketPlayground = ({ className, ...props }) => {
         />
 
         <button type="submit" title="Send">
-          <IoMdSend
-            className="w-6 h-6 text-gray-400 dark:text-gray-500"
-            aria-hidden="true"
-          />
+          <IoMdSend className="w-6 h-6 text-gray-400" aria-hidden="true" />
         </button>
       </form>
     )) ||

@@ -7,10 +7,10 @@ function GoogleLoginForm(opt = {}) {
   const router = useRouter();
 
   return (
-    <div className="flex items-center justify-center py-10 bg-slate-100 dark:bg-slate-800">
+    <div className="flex items-center justify-center py-10 bg-slate-100">
       <button
         type="submit"
-        className="flex items-center bg-white dark:bg-slate-900 border border-gray-300 dark:border-gray-600 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 dark:text-gray-100 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-gray-400"
+        className="flex items-center bg-white border border-gray-300 rounded-lg shadow-md px-6 py-2 text-sm font-medium text-gray-800 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
         // onClick={() => router.push('/api/google/signin')}
         onClick={() =>
           signIn('google', {

@@ -24,8 +24,8 @@ export const metadata = {
 
 async function RootLayout({ children }) {
   return (
-    <html lang="en" className="h-full bg-white dark:bg-black">
-      <body className="dx-viewport h-full flex dark:bg-slate-800/70">
+    <html lang="en">
+      <body>
         <Providers>
           <Suspense fallback={<SkeletonCard />}>
             <Socket />
@@ -33,9 +33,7 @@ async function RootLayout({ children }) {
 
           <Toaster />
 
-          <div className="flex flex-col overflow-scroll min-w-0 w-full">
-            {children}
-          </div>
+          {children}
         </Providers>
       </body>
     </html>
