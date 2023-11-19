@@ -1,5 +1,10 @@
 ### Bomonti Sydney
 
+You can use this repo as a CI/CD example.
+
+.action folder contains JS exec command for shaping your deploy with js against sh.
+.github folder contains deployment scripts for gh
+
 ## Getting Started
 
 First, run the development server:
